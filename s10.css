@@ -1,0 +1,110 @@
+@media screen and (max-width: 430px) {
+  .container {
+    width: 398px;
+  }
+ .frame1{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    margin-top: 33px;
+    margin-right: 16px;
+    margin-left: 16px;
+ }
+}
+:root {
+  --main-bg-color: #292929;
+  --cards-bg-color: #3d3d3d;
+  --text-color: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  color: var(--text-color);
+  background-color: var(--main-bg-color);
+  font-family: "inter";
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+}
+.weather,
+.calendar,
+.email {
+  width: 100%;
+  background-color: var(--cards-bg-color);
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 2px 0px #0000001f 0px 4px 8px 0px #00000024;
+}
+h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+.weather span,
+.calendar span,
+.email span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff66;
+}
+.hello {
+  margin-bottom: 42px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.date {
+  margin-bottom: 16px;
+}
+.daily {
+  margin-bottom: 6px;
+  border-left: 2px solid #ffc453;
+  padding: 4px 0 4px 12px;
+}
+.meeting {
+  border-left: 2px solid #29e489;
+  padding: 4px 0 4px 12px;
+}
+.f1,
+.f2,
+.f3{
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.email img{
+    display: block;
+    width: 48px;
+}
+.f1 h4{
+    display: -webkit-box;
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 1; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.email img{
+   margin-left: 0;
+}
+.f1,
+.f2{
+    border-bottom: 1px solid #29292980;
+}
+.inbox{
+    margin-bottom: 16px;
+}

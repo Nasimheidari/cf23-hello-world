@@ -2,14 +2,20 @@
   .container {
     width: 398px;
   }
- .frame1{
+  .frame1 {
+    margin-top: 33px;
+  }
+  .frame2 {
+    margin-top: 16px;
+  }
+  .frame1,
+  .frame2 {
     display: flex;
     gap: 16px;
     flex-direction: column;
-    margin-top: 33px;
     margin-right: 16px;
     margin-left: 16px;
- }
+  }
 }
 :root {
   --main-bg-color: #292929;
@@ -25,6 +31,7 @@ body {
   color: var(--text-color);
   background-color: var(--main-bg-color);
   font-family: "inter";
+  padding-bottom: 210px;
 }
 .container {
   margin-right: auto;
@@ -32,7 +39,9 @@ body {
 }
 .weather,
 .calendar,
-.email {
+.email,
+.mood,
+.quote {
   width: 100%;
   background-color: var(--cards-bg-color);
   padding: 16px;
@@ -46,7 +55,9 @@ h2 {
 }
 .weather span,
 .calendar span,
-.email span {
+.email span,
+.mood span,
+.quote span{
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -81,30 +92,72 @@ h4 {
 }
 .f1,
 .f2,
-.f3{
-    display: flex;
-    align-items: center;
-    margin-bottom: 6px;
+.f3 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
 }
-.email img{
-    display: block;
-    width: 48px;
+.email img {
+  display: block;
+  width: 48px;
 }
-.f1 h4{
-    display: -webkit-box;
-    -webkit-box-orient: vertical; 
-    -webkit-line-clamp: 1; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-
+.f1 h4 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.email img{
-   margin-left: 0;
+.email img {
+  margin-left: 0;
 }
 .f1,
-.f2{
-    border-bottom: 1px solid #29292980;
+.f2 {
+  border-bottom: 1px solid #29292980;
 }
-.inbox{
-    margin-bottom: 16px;
+.inbox {
+  margin-bottom: 16px;
 }
+.mood p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+}
+.mood img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+li {
+  width: calc(100% /3.33);
+  background-color: #292929;
+  padding: 8px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+.quote p{
+font-size: 20px;
+font-weight: 500;
+line-height: 32px;
+text-align: left;
+color: #FFFFFFCC;
+margin-top: 29px;
+letter-spacing: -1px;
+
+}
+.quote :nth-child(3){
+    display: block;
+    text-align: right;
+    
+}
+

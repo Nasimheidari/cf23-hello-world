@@ -66,6 +66,17 @@ h2 {
 .hello {
   margin-bottom: 42px;
 }
+.weather{
+  position: relative;
+}
+.sun{
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 2px;
+
+}
+
 h3 {
   font-size: 24px;
   font-weight: 500;
@@ -78,9 +89,11 @@ h4 {
   font-weight: 400;
   line-height: 22px;
 }
-.date {
+.date,
+.inbox {
   margin-bottom: 16px;
 }
+
 .daily {
   margin-bottom: 6px;
   border-left: 2px solid #ffc453;
@@ -115,9 +128,7 @@ h4 {
 .f2 {
   border-bottom: 1px solid #29292980;
 }
-.inbox {
-  margin-bottom: 16px;
-}
+
 .mood p {
   font-size: 16px;
   font-weight: 600;
